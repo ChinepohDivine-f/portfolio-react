@@ -21,7 +21,7 @@
     place-items: center;
 }
 
-.about__me-image {
+.about__me__image {
     border-radius: 2rem;
     overflow: hidden;
     transform-origin: rotate(10deg);
@@ -29,6 +29,10 @@
 }
 
 .about__me-image:hover{
+    border: 3px;
+    background-color: transparent;
+    border-color: var(--color-primary-variant);
+    padding: 1.5rem;
     transform: rotate(45);
 }
 
@@ -98,9 +102,12 @@
 }
 
 .about__me__image:hover {
-    transform: rotate(20deg);
-    height: 130%;
-    width: 130%;
+    padding: 1.5rem;
+    border: 3px;
+    border-color: var(--color-primary-variant);
+    /* transform: rotate(20deg); */
+    /* height: 130%; */
+    /* width: 130%; */
 }
 
 .about__cards {
@@ -185,7 +192,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 645px) {
 
     .about__container {
         grid-template-columns: 1fr;

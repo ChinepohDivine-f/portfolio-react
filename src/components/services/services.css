@@ -47,6 +47,12 @@
     border-radius: 1rem;
     border-style: inherit;
     margin: 6px;
+    transform: var(--transition);
+    border-color: var(--color-primary-variant);
+}
+
+.service__list:hover{
+    border:3px;
     border-color: var(--color-primary-variant);
 }
 
