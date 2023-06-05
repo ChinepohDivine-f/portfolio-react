@@ -38,6 +38,9 @@ after the social icons*/
 }
 
 .my_image {
+    /* padding-left:55%; */
+    /* width:35%;
+    height: 30rem; */
     align-self: center;
     background: linear-gradient(var(--color-primary), transparent);
     width: 22rem;
@@ -88,11 +91,13 @@ specific screen*/
 
 @media screen and(max-width:600px) {
     header {
-        height: 100vh
+        height: 150vh
     }
 
-    .header__social,
-    .scroll__down {
+    .header__social {
         display: none;
     }
+        .scroll__down{
+            display: none;
+        }
 }
