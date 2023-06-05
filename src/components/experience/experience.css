@@ -88,8 +88,20 @@ h3{
     margin-inline: -8;
 }
 
-/* @media screen and (max-width: px){
+@media screen and (max-width: 650px){
     #experience {
         height: 100vh;
     }
-} */
+    .experience{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    .experience {
+        display: inline-block;
+        width: 100%;
+        padding: .5rem 2rem .5rem 2rem;
+        margin: 0rem;
+        /* margin-inline: -8; */
+    }
+}
