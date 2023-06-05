@@ -1,5 +1,6 @@
 .container.testimonials__container {
     width: 40%;
+    padding: 3rem;
     padding-bottom: 3rem;
     border-radius: 30px;
 }

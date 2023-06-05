@@ -92,9 +92,9 @@ a{
         /* #services {
             height: 100vh;
         } */
-    .service {
+    /* .service {
         height: auto
-    }
+    } */
 }
 
 @media only screen and (max-width: 600px) {

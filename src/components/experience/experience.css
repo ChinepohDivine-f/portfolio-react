@@ -89,9 +89,9 @@ h3{
 }
 
 @media screen and (max-width: 650px){
-    #experience {
+    /* #experience {
         height: 100vh;
-    }
+    } */
     .experience{
         display: grid;
         grid-template-columns: 1fr 1fr;
