@@ -17,20 +17,33 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      "service_5vuauza",
-      "template_fdnnl56",
+      "service_xfp05zi",
+      "template_lz9amkb",
       form.current,
-      "EmSdUNQzQuxkUqGWx"
+      "0A84jqpO707mzv1MX"
     );
-    e.target.reset().then(
-      (result) => {
-        console.log(result.text);
-      },
+    
+// sendEmail() {
+//     emailjs.sendForm('service_xfp05zi', 
+//     'template_lz9amkb', 
+//     '0A84jqpO707mzv1MX')
+//       .then((result) => {
+//           console.log(result.text);
+//       }, (error) => {
+//           console.log(error.text);
+//       });
+//   }
 
-      (error) => {
-        console.log(error.text);
-      }
-    );
+    e.target.reset()
+    // then(
+    //   (result) => {
+    //     console.log(result.text);
+    //   },
+
+    //   (error) => {
+    //     console.log(error.text);
+    //   }
+    // );
   };
 
   return (
@@ -49,7 +62,7 @@ const Contact = () => {
             <AiOutlineLinkedin className="contact__option__icon" />
             <h4>LinkedIn</h4> <h5>Chinepoh Divine-favour</h5>
             <a
-              href="https://www.linkedin.com/in/chinepohdivine/"
+              href="https://www.linkedin.com/in/chinepoh-divine-favour-13a330228/"
               target="_blank"
             >
               Tape me on LinkedIn

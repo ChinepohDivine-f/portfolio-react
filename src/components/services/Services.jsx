@@ -33,6 +33,7 @@ export const Services = () => {
             <li>Linux trouble shooting</li>
             <li>Windows os trouble shooting</li>
             <li>Photography</li>
+            <li>Ethical hacking</li>
             <li>IDE & OS setups</li>
             <div className="assurance">
               <FaRegSmileBeam />
