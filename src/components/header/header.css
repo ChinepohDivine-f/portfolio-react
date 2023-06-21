@@ -1,7 +1,5 @@
-/*<<<<<<< HEAD*/
 header {
     height: 100vh;
-    /*vh correspond to viewport height*/
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -10,6 +8,8 @@ header {
     height: 100%;
     text-align: center;
     position: relative;
+    overflow: hidden;
+
 }
 
 .cta {
@@ -30,11 +30,9 @@ header {
 }
 
 .header__social::after {
-    /*the after tag help us to draw the vertical line we have
-after the social icons*/
     content: '';
     width: 1px;
-    height: 3rem;
+    height: 2rem;
     background: var(--color-primary);
 }
 
@@ -47,7 +45,7 @@ after the social icons*/
     width: 22rem;
     Height: 30rem;
     position: absolute;
-    left: calc(50% - 11rem); 
+    left: calc(50% - 11rem);
     /*this help to place the image to the middle of screen*/
     margin-top: 4rem;
     border-radius: 1rem 5rem 0 0;
@@ -55,14 +53,6 @@ after the social icons*/
     transform: var(--transition);
     padding: 0rem 0.1rem 0.1rem 0.1rem;
 }
-
-.my_image:hover{
-    border: 3px;
-    background-color: transparent;
-    border-color: var(--color-primary-variant);
-    background-color:transparent;
-}
-
 
 .scroll__down {
     position: absolute;
@@ -73,33 +63,24 @@ after the social icons*/
     font-weight: 0.9rem;
 }
 
-/*This is what we call media query: here we define the css that will be apply for a
-specific screen*/
-
-@media screen and(max-width:1024px) {
+@media only screen and(max-width:1024px) {
     header {
         height: 68vh
     }
-         div.my_image:hover {
-    
-             height: 400rem;
-             width: 40rem;
-             bleed: 2px;
-             border-radius: 1rem 5rem 0 0;
-             transform: rotate(0deg);
-         }
+
 }
 
-@media screen and(max-width:600px) {
+@media only screen and (max-width: 600px) {
+
     header {
-        height: 150vh
+        height: 100vh;
+
     }
 
-    .header__social {
+    .header__social,
+    .scroll__down {
         display: none;
     }
-        .scroll__down{
-            display: none;
-        }
 
 }
+

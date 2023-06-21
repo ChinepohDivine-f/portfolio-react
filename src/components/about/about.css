@@ -12,7 +12,7 @@
 .about__me {
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     background: linear-gradient(
         45deg,
         transparent,
@@ -24,22 +24,25 @@
 }
 
 .about__me-image {
-    border-radius: 3rem;
+    border: 30px;
     /* overflow: hidden; */
-    transform-origin: rotate(10deg);
+    transform-origin: rotate(-10deg);
     transition: var(--transition);
+    border-radius: 30px;
 }
 
 .about__image:hover{
     margin: 0rem;
-    border-radius: 3rem;
+    transform-origin: rotate(1deg);
+    border-radius: 1.5rem;
+    image-orientation: 2deg;
 }
 
-.about__me-image:hover{
-    transform: rotate(20deg);
-    height: 130%;
-    width: 130%;
-
+.about__me-image:hover {
+    transform: rotate(1deg);
+    /* height: 120%; */
+    border-radius: 2rem;
+    width: 110%;
 }
 
 .about__cards{
@@ -49,7 +52,7 @@
 }
 
 .about__card{
-    background: var(--colot-bg-variant);
+    background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -100,12 +103,12 @@
     display: grid;
 }
 
-.about__me__image {
+/* .about__me__image {
     border-radius: 2rem;
     /* overflow: hidden; */
-    transform: rotate(5deg);
-    transition: var(--transition);
-}
+    /* transform: rotate(5deg); */
+    /* transition: var(--transition); */
+/* } */ 
 /* 
 .about__me__image:hover {
     padding: 1.5rem;
