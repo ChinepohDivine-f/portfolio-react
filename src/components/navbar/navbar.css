@@ -86,21 +86,24 @@ nav {
 nav a{
     background: transparent;
     padding: 0.9rem;
-    border-radius: 50%;
+    border-radius: 35%;
     display: flex;
     color: var(--color-light);
     font-size: 1rem;
 }
 
 nav a:hover {
-    background: var(--color-primary);
-    font-size: 3rem;
+    background: var(--color-bg);
+    color: var(--color-light);
+    font-size: 2.5rem;
+    align-content: center;
     
 }
 nav a.active {
-    background: var(--color-bg);
+    /* background: var(--color-bg); */
     color: var(--color-white);
-    /* font-size: inherit; */
+    font-weight: 800;
+    font-size: 2.5;
 }
 
 @media screen and (max-width: 768px) {
@@ -111,7 +114,7 @@ nav a.active {
     }
         nav a:hover {
             background: var(--color-primary);
-            font-size: 2rem;
+            font-size: 1.5rem;
     
         }
 }
